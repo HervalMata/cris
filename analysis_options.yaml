@@ -4,10 +4,23 @@
 # The issues identified by the analyzer are surfaced in the UI of Dart-enabled
 # IDEs (https://dart.dev/tools#ides-and-editors). The analyzer can also be
 # invoked from the command line by running `flutter analyze`.
+include: all_lint_rules.yaml
 
 # The following line activates a set of recommended lints for Flutter apps,
 # packages, and plugins designed to encourage good coding practices.
-include: package:flutter_lints/flutter.yaml
+# include: package:flutter_lints/flutter.yaml
+analizer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/i18n.dart"
+
+  strong-mode:
+    implicit-casts: false  
+    implicit-dynamic: true
+
+  errors:
+    included_file_warning: ignore  
 
 linter:
   # The lint rules applied to this project can be customized in the
@@ -24,6 +37,26 @@ linter:
   rules:
     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+    cascade_invocations: false
+    prefer_double_quotes: false
+    always_specify_types: false
+    unnecessary_final: false
+    prefer_expression_function_podies: false
+    always_put_required_named_parameters_first: false
+    flutter_style_todos: false
+    avoid_catches_without_on_classes: false
+    lines_longer_than_80_chars: false
+    avoid_annotating_with_dynamic: false
+    public_member_api_docs: false
+    diagnostic_describe_all_properties: false
+    sort_pub_dependencies: false
+    use_key_in_widget_constructors: false
+    avoid_types_on_closure_parameters: false
+    prefer_const_constructors: false
+    prefer_const_constructors_in_immutables: false
+    prefer_const_declarations: false
+    prefer_const_literals_to_create_immutables: false
+    prefer_constructors_over_static_methods: false
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
