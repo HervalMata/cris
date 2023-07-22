@@ -2,6 +2,8 @@ class AppRoutes {
   static const homeRoute = '/home';
   static const introRoute = '/intro';
   static const onBoardingRoute = '/onBoarding';
+  static const onBoarding2Route = '/onBoarding2';
+  static const onBoarding3Route = '/onBoarding3';
   static const registrationRoute = '/registration';
   static const cartRoute = '/cart';
   static const categoriesRoute = '/categories';
