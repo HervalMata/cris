@@ -5,6 +5,9 @@ class AppRoutes {
   static const onBoarding2Route = '/onBoarding2';
   static const onBoarding3Route = '/onBoarding3';
   static const registrationRoute = '/registration';
+  static const registration2Route = '/registration2';
+  static const registration3Route = '/registration3';
+  static const registration4Route = '/registration4';
   static const cartRoute = '/cart';
   static const categoriesRoute = '/categories';
   static const checkoutRoute = '/checkout';
