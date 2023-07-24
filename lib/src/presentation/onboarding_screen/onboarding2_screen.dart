@@ -8,8 +8,8 @@ import '../../common_widgets/primary_button.dart';
 import '../../core/constants/constants_export.dart';
 import '../../routes/app_routes.dart';
 
-class Onboarding1Screen extends StatelessWidget {
-  const Onboarding1Screen({super.key});
+class Onboarding2Screen extends StatelessWidget {
+  const Onboarding2Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,13 +43,13 @@ class Onboarding1Screen extends StatelessWidget {
               ),
               gapH56,
               SvgPicture.asset(
-                'assets/icons/looking.svg',
+                'assets/icons/products.svg',
                 width: 342,
                 height: 342,
               ),
               gapH56,
               Text(
-                AppTitles.onboradingTitle,
+                AppTitles.onborading2Title,
                 style: TextStyle(
                   color: AppColors.neutral1800,
                   fontSize: 32,
@@ -60,7 +60,7 @@ class Onboarding1Screen extends StatelessWidget {
               ),
               gapH16,
               Text(
-                AppTitles.onborading1Description,
+                AppTitles.onborading2Description,
                 style: TextStyle(
                   color: AppColors.neutral1600,
                   fontSize: 16,
@@ -72,7 +72,7 @@ class Onboarding1Screen extends StatelessWidget {
               PrimaryButton(
                 buttonLabel: 'Próximo',
                 color: AppColors.neutral1800,
-                onPressed: () => Get.toNamed(AppRoutes.onBoarding2Route),
+                onPressed: () => Get.toNamed(AppRoutes.onBoarding3Route),
               )
             ],
           ),
