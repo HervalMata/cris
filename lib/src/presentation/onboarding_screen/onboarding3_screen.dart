@@ -2,14 +2,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:get/get.dart';
 
 import '../../common_widgets/primary_button.dart';
 import '../../core/constants/constants_export.dart';
-import '../../routes/app_routes.dart';
 
-class Onboarding2Screen extends StatelessWidget {
-  const Onboarding2Screen({super.key});
+class Onboarding3Screen extends StatelessWidget {
+  const Onboarding3Screen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,13 +41,13 @@ class Onboarding2Screen extends StatelessWidget {
               ),
               gapH56,
               SvgPicture.asset(
-                'assets/icons/products.svg',
+                'assets/icons/mailbox.svg',
                 width: 342,
                 height: 342,
               ),
               gapH56,
               Text(
-                AppTitles.onboarding2Title,
+                AppTitles.onboarding3Title,
                 style: TextStyle(
                   color: AppColors.neutral1800,
                   fontSize: 32,
@@ -60,7 +58,7 @@ class Onboarding2Screen extends StatelessWidget {
               ),
               gapH16,
               Text(
-                AppTitles.onboarding2Description,
+                AppTitles.onboarding3Description,
                 style: TextStyle(
                   color: AppColors.neutral1600,
                   fontSize: 16,
@@ -70,9 +68,9 @@ class Onboarding2Screen extends StatelessWidget {
               ),
               gapH70,
               PrimaryButton(
-                buttonLabel: 'Próximo',
+                buttonLabel: 'Cadastre-se',
                 color: AppColors.neutral1800,
-                onPressed: () => Get.toNamed(AppRoutes.onBoarding3Route),
+                onPressed: () {},
               )
             ],
           ),

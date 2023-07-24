@@ -10,13 +10,13 @@ class AppTitles {
   static const profileTitle = 'Perfil';
   static const orderTitle = 'Ordem';
 
-  static const onboradingTitle = 'Accessórios para sua cabeça';
-  static const onboradingDescription = 'Deixaremos você ainda mais bonita';
-  static const onborading2Title = 'Ache o que você procura aqui';
-  static const onborading2Description =
+  static const onboardingTitle = 'Accessórios para sua cabeça';
+  static const onboardingDescription = 'Deixaremos você ainda mais bonita';
+  static const onboarding2Title = 'Ache o que você procura aqui';
+  static const onboarding2Description =
       'Tudo para deixar você mais elegante ainda';
-  static const onborading3Title = 'Deixe-nos lhe ajudar';
-  static const onborading3Description =
+  static const onboarding3Title = 'Deixe-nos lhe ajudar';
+  static const onboarding3Description =
       'Fique tranquila aqui você não sai decepcionada';
 
   static const registrationStepTitle = 'Adicione uma foto.';

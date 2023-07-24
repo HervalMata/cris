@@ -49,7 +49,7 @@ class Onboarding1Screen extends StatelessWidget {
               ),
               gapH56,
               Text(
-                AppTitles.onboradingTitle,
+                AppTitles.onboardingTitle,
                 style: TextStyle(
                   color: AppColors.neutral1800,
                   fontSize: 32,
@@ -60,7 +60,7 @@ class Onboarding1Screen extends StatelessWidget {
               ),
               gapH16,
               Text(
-                AppTitles.onborading1Description,
+                AppTitles.onboardingDescription,
                 style: TextStyle(
                   color: AppColors.neutral1600,
                   fontSize: 16,
