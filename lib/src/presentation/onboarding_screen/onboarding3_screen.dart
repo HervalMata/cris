@@ -2,9 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 import '../../common_widgets/primary_button.dart';
 import '../../core/constants/constants_export.dart';
+import 'widgets/header_section.dart';
 
 class Onboarding3Screen extends StatelessWidget {
   const Onboarding3Screen({super.key});
@@ -18,58 +20,35 @@ class Onboarding3Screen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SvgPicture.asset(
-                    AppAssets.appIconLogoBlack,
-                    width: 24,
-                    height: 24,
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Pular',
-                      style: TextStyle(
-                        color: AppColors.neutral1600,
-                        fontFamily: AppFonts.interFontFamily,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ],
+              HeaderSection(
+                buttonLabel: 'Sair',
+                onPressed: () {},
               ),
-              gapH56,
+              gapH16,
               SvgPicture.asset(
-                'assets/icons/mailbox.svg',
+                AppAssets.mailboxImage,
                 width: 342,
                 height: 342,
               ),
-              gapH56,
+              gapH16,
               Text(
                 AppTitles.onboarding3Title,
-                style: TextStyle(
-                  color: AppColors.neutral1800,
-                  fontSize: 32,
-                  fontFamily: AppFonts.loraFontFamily,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: Get.textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
               gapH16,
               Text(
                 AppTitles.onboarding3Description,
-                style: TextStyle(
-                  color: AppColors.neutral1600,
-                  fontSize: 16,
+                style: Get.textTheme.displaySmall?.copyWith(
                   fontFamily: AppFonts.interFontFamily,
+                  height: 1.5,
                 ),
                 textAlign: TextAlign.center,
               ),
-              gapH70,
+              gapH32,
               PrimaryButton(
                 buttonLabel: 'Cadastre-se',
-                color: AppColors.neutral1800,
+                buttonColor: AppColors.neutral1800,
                 onPressed: () {},
               )
             ],

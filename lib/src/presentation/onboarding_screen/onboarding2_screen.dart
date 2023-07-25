@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import '../../common_widgets/primary_button.dart';
 import '../../core/constants/constants_export.dart';
 import '../../routes/app_routes.dart';
+import 'widgets/header_section.dart';
 
 class Onboarding2Screen extends StatelessWidget {
   const Onboarding2Screen({super.key});
@@ -20,58 +21,34 @@ class Onboarding2Screen extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SvgPicture.asset(
-                    AppAssets.appIconLogoBlack,
-                    width: 24,
-                    height: 24,
-                  ),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Pular',
-                      style: TextStyle(
-                        color: AppColors.neutral1600,
-                        fontFamily: AppFonts.interFontFamily,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ],
+              HeaderSection(
+                onPressed: () {},
               ),
-              gapH56,
+              gapH16,
               SvgPicture.asset(
-                'assets/icons/products.svg',
+                AppAssets.productsImage,
                 width: 342,
                 height: 342,
               ),
-              gapH56,
+              gapH16,
               Text(
                 AppTitles.onboarding2Title,
-                style: TextStyle(
-                  color: AppColors.neutral1800,
-                  fontSize: 32,
-                  fontFamily: AppFonts.loraFontFamily,
-                  fontWeight: FontWeight.w600,
-                ),
+                style: Get.textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
               gapH16,
               Text(
                 AppTitles.onboarding2Description,
-                style: TextStyle(
-                  color: AppColors.neutral1600,
-                  fontSize: 16,
+                style: Get.textTheme.displaySmall?.copyWith(
                   fontFamily: AppFonts.interFontFamily,
+                  height: 1.5,
                 ),
                 textAlign: TextAlign.center,
               ),
-              gapH70,
+              gapH32,
               PrimaryButton(
                 buttonLabel: 'Próximo',
-                color: AppColors.neutral1800,
+                buttonColor: AppColors.neutral1800,
                 onPressed: () => Get.toNamed(AppRoutes.onBoarding3Route),
               )
             ],

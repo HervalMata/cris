@@ -2,58 +2,39 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../core/constants/constants_export.dart';
+import 'theme_export.dart';
 
 class AppThemes {
   final lightTheme = ThemeData.light().copyWith(
     useMaterial3: true,
     scaffoldBackgroundColor: AppColors.white,
-    primaryColor: AppColors.pink500,
+    primaryColor: AppColors.neutral1100,
     splashColor: Colors.grey,
     appBarTheme: AppBarTheme(
       elevation: 0,
+      centerTitle: true,
       backgroundColor: Colors.transparent,
-      systemOverlayStyle: const SystemUiOverlayStyle(
-        statusBarColor: Color.fromARGB(255, 230, 151, 199),
+      systemOverlayStyle: SystemUiOverlayStyle(
+        statusBarColor: AppColors.white,
       ),
+      titleTextStyle: AppStyle.heading4Style,
     ),
     textTheme: TextTheme(
-      displayLarge: TextStyle(
-        fontFamily: AppFonts.loraFontFamily,
-        color: AppColors.neutral1900,
-        fontSize: 40,
-        fontWeight: AppFonts.loraSemiBold,
-      ),
-      displayMedium: TextStyle(
-        color: Colors.grey,
-        fontSize: 14,
-        fontWeight: FontWeight.bold,
-      ),
-      displaySmall: TextStyle(
-        color: Color.fromARGB(255, 230, 151, 199),
-        fontSize: 14,
-        fontWeight: FontWeight.w300,
-      ),
-      titleLarge: TextStyle(
-        color: Color.fromARGB(255, 230, 151, 199),
-        fontSize: 12,
-        fontWeight: FontWeight.w300,
-      ),
-      titleSmall: TextStyle(
-        color: Color.fromARGB(255, 230, 151, 199),
-        fontSize: 12,
-        fontWeight: FontWeight.w300,
-      ),
-      titleMedium: TextStyle(
-        color: Color.fromARGB(255, 0, 0, 0),
-        fontSize: 12,
-        fontWeight: FontWeight.normal,
-      ),
-      bodyLarge: TextStyle(),
-      bodyMedium: TextStyle(),
-      bodySmall: TextStyle(),
+      headlineLarge: AppStyle.heading1Style,
+      headlineMedium: AppStyle.heading2Style,
+      headlineSmall: AppStyle.heading3Style,
+      displayLarge: AppStyle.heading4Style,
+      displayMedium: AppStyle.heading5Style,
+      displaySmall: AppStyle.paragraph1Bold,
+      titleLarge: AppStyle.paragraph2Bold,
+      titleSmall: AppStyle.label1Bold,
+      titleMedium: AppStyle.paragraph3Bold,
+      bodyLarge: AppStyle.label2Bold,
+      bodyMedium: AppStyle.label3Bold,
+      bodySmall: AppStyle.label4Bold,
       labelLarge: TextStyle(),
       labelMedium: TextStyle(
-        color: AppColors.neutral1800,
+        color: Colors.white,
         fontFamily: AppFonts.interFontFamily,
         fontWeight: AppFonts.loraSemiBold,
       ),
@@ -75,38 +56,30 @@ class AppThemes {
   final darkTheme = ThemeData.dark().copyWith(
     useMaterial3: true,
     scaffoldBackgroundColor: AppColors.white,
-    appBarTheme: const AppBarTheme(
+    appBarTheme: AppBarTheme(
       elevation: 0,
+      centerTitle: true,
       backgroundColor: Colors.transparent,
+      titleTextStyle: AppStyle.heading4Style,
+      systemOverlayStyle: SystemUiOverlayStyle(
+        statusBarColor: AppColors.white,
+      ),
     ),
-    primaryColor: const Color.fromARGB(255, 230, 151, 199),
-    textTheme: const TextTheme(
-      displayLarge: TextStyle(
-        color: Colors.white,
-        fontSize: 25,
-        fontWeight: FontWeight.bold,
-      ),
-      displayMedium: TextStyle(
-        color: Colors.grey,
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-      ),
-      titleSmall: TextStyle(
-        color: Color.fromARGB(255, 255, 255, 255),
-        fontSize: 16,
-        fontWeight: FontWeight.normal,
-      ),
-      titleMedium: TextStyle(
-        color: Color.fromARGB(255, 0, 0, 0),
-        fontSize: 16,
-        fontWeight: FontWeight.w300,
-      ),
-      bodyLarge: TextStyle(),
-      bodyMedium: TextStyle(),
-      bodySmall: TextStyle(),
-      labelLarge: TextStyle(),
-      labelMedium: TextStyle(),
-      labelSmall: TextStyle(),
+    primaryColor: AppColors.pink500,
+    splashColor: AppColors.neutral1100,
+    textTheme: TextTheme(
+      headlineLarge: AppStyle.heading1Style,
+      headlineMedium: AppStyle.heading2Style,
+      headlineSmall: AppStyle.heading3Style,
+      displayLarge: AppStyle.heading4Style,
+      displayMedium: AppStyle.heading5Style,
+      displaySmall: AppStyle.paragraph1Bold,
+      titleLarge: AppStyle.paragraph2Bold,
+      titleSmall: AppStyle.label1Bold,
+      titleMedium: AppStyle.paragraph3Bold,
+      bodyLarge: AppStyle.label2Bold,
+      bodyMedium: AppStyle.label3Bold,
+      bodySmall: AppStyle.label4Bold,
     ),
     colorScheme: const ColorScheme(
         brightness: Brightness.light,
